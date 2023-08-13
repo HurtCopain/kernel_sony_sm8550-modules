@@ -41,7 +41,6 @@ LOCAL_MODULE              := sec-module-symvers
 LOCAL_MODULE_STEM         := Module.symvers
 LOCAL_MODULE_KBUILD_NAME  := Module.symvers
 LOCAL_MODULE_PATH         := $(KERNEL_MODULES_OUT)
-include $(DLKM_DIR)/Build_external_kernelmodule.mk
 ###################################################
 ###################################################
 include $(CLEAR_VARS)
@@ -52,7 +51,6 @@ LOCAL_MODULE_TAGS         := optional
 LOCAL_MODULE_DEBUG_ENABLE := true
 LOCAL_HEADER_LIBRARIES    := smcinvoke_kernel_headers
 LOCAL_MODULE_PATH         := $(KERNEL_MODULES_OUT)
-include $(DLKM_DIR)/Build_external_kernelmodule.mk
 ###################################################
 ###################################################
 include $(CLEAR_VARS)
@@ -62,7 +60,6 @@ LOCAL_MODULE_KBUILD_NAME  := tz_log_dlkm.ko
 LOCAL_MODULE_TAGS         := optional
 LOCAL_MODULE_DEBUG_ENABLE := true
 LOCAL_MODULE_PATH         := $(KERNEL_MODULES_OUT)
-include $(DLKM_DIR)/Build_external_kernelmodule.mk
 ###################################################
 ###################################################
 include $(CLEAR_VARS)
@@ -72,7 +69,6 @@ LOCAL_MODULE_KBUILD_NAME  := qce50_dlkm.ko
 LOCAL_MODULE_TAGS         := optional
 LOCAL_MODULE_DEBUG_ENABLE := true
 LOCAL_MODULE_PATH         := $(KERNEL_MODULES_OUT)
-include $(DLKM_DIR)/Build_external_kernelmodule.mk
 ###################################################
 ###################################################
 include $(CLEAR_VARS)
@@ -82,7 +78,6 @@ LOCAL_MODULE_KBUILD_NAME  := qcedev-mod_dlkm.ko
 LOCAL_MODULE_TAGS         := optional
 LOCAL_MODULE_DEBUG_ENABLE := true
 LOCAL_MODULE_PATH         := $(KERNEL_MODULES_OUT)
-include $(DLKM_DIR)/Build_external_kernelmodule.mk
 ###################################################
 ###################################################
 include $(CLEAR_VARS)
@@ -92,7 +87,6 @@ LOCAL_MODULE_KBUILD_NAME  := qcrypto-msm_dlkm.ko
 LOCAL_MODULE_TAGS         := optional
 LOCAL_MODULE_DEBUG_ENABLE := true
 LOCAL_MODULE_PATH         := $(KERNEL_MODULES_OUT)
-include $(DLKM_DIR)/Build_external_kernelmodule.mk
 ###################################################
 ###################################################
 include $(CLEAR_VARS)
@@ -102,7 +96,6 @@ LOCAL_MODULE_KBUILD_NAME  := hdcp_qseecom_dlkm.ko
 LOCAL_MODULE_TAGS         := optional
 LOCAL_MODULE_DEBUG_ENABLE := true
 LOCAL_MODULE_PATH         := $(KERNEL_MODULES_OUT)
-include $(DLKM_DIR)/Build_external_kernelmodule.mk
 ###################################################
 ###################################################
 include $(CLEAR_VARS)
@@ -112,7 +105,6 @@ LOCAL_MODULE_KBUILD_NAME  := qrng_dlkm.ko
 LOCAL_MODULE_TAGS         := optional
 LOCAL_MODULE_DEBUG_ENABLE := true
 LOCAL_MODULE_PATH         := $(KERNEL_MODULES_OUT)
-include $(DLKM_DIR)/Build_external_kernelmodule.mk
 ###################################################
 ###################################################
 ifneq (, $(filter true, $(TARGET_ENABLE_QSEECOM) $(TARGET_BOARD_AUTO)))
@@ -123,7 +115,6 @@ LOCAL_MODULE_KBUILD_NAME  := qseecom_dlkm.ko
 LOCAL_MODULE_TAGS         := optional
 LOCAL_MODULE_DEBUG_ENABLE := true
 LOCAL_MODULE_PATH         := $(KERNEL_MODULES_OUT)
-include $(DLKM_DIR)/Build_external_kernelmodule.mk
 endif #TARGET_ENABLE_QSEECOM OR TARGET_BOARD_AUTO
 ###################################################
 ###################################################
